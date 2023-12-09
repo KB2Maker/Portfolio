@@ -1,0 +1,116 @@
+html {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        font-family: "Yusei Magic", sans-serif;
+        --theme-color-1: #f50;
+        --theme-color-2: #fc3;
+        color: #454545;
+    }
+
+    body {
+        color: var(--main-foreground);
+        line-height: 1.5;
+        word-wrap: break-word;
+        box-sizing: border-box;
+        max-width: 980px;
+        margin: 2em auto;
+        padding: 0px 30px;
+    }
+
+    h1 {
+        position: relative;
+        text-align: center;
+        font-size: 280%;
+        padding: 0.2em 0.5em;
+        letter-spacing: 0.1em;
+        text-shadow: #fff 2px 0, #fff -2px 0, #fff 0 -2px, #fff 0 2px, #fff 2px 2px,
+            #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px,
+            #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px,
+            #fff -2px -1px, rgba(0, 0, 0, 0.5) 3px 3px 3px;
+        background: var(--theme-color-2);
+        box-shadow: 0px 0px 0px 5px var(--theme-color-2);
+        border: dashed 2px white;
+    }
+
+    h1::after {
+        position: absolute;
+        content: "";
+        left: -7.5px;
+        top: -7.5px;
+        border-width: 0 0 1em 1em;
+        border-style: solid;
+        border-color: #fff #fff var(--theme-color-2);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+        position: relative;
+        font-size: 200%;
+        letter-spacing: 0.05em;
+        font-weight: normal;
+        padding: 0 0 0 1.5em;
+        border-bottom: 3px solid var(--theme-color-2);
+    }
+
+    h2::before {
+        position: absolute;
+        left: 0.4em;
+        font-weight: bold;
+        font-family: "Font Awesome 6 Free";
+        content: "\f5ad";
+        top: 0.2em;
+        font-size: 85%;
+        color: var(--theme-color-2);
+    }
+
+    img {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+    }
+
+    strong {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 125%;
+        padding: 0 0.2em;
+        color: var(--theme-color-1);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--theme-color-1);
+        cursor: pointer;
+        border-bottom: 1.5px dashed;
+        transition: background-color 0.5s;
+    }
+
+    a:hover {
+        color: white;
+        background-color: var(--theme-color-1);
+        border-radius: 4px;
+        border-bottom: none;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-block-start: 0.7em;
+        margin-block-end: 0.7em;
+    }
+
+    ul li {
+        position: relative;
+        padding: 0 0 0 1.6em;
+        margin: 0;
+        text-indent: 0.5em;
+    }
+
+    ul li::before {
+        position: absolute;
+        left: 0.5em;
+        top: 0.4em;
+        font-size: 75%;
+        font-family: "Font Awesome 6 Free";
+        font-weight: bold;
+        content: "\f816";
+    }
